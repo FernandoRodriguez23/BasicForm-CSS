@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Fernando Rodriguez">
+        <meta name="discrption" content="Basic Form Layout">
+
+        <meta property="og:image" content="Favacon.png">
+        <meta property="FavaCon" content="Chems with code">
+        <meta property="A picture of Chems with Code writen" content="Future FavaCon">
+        <link rel="shortcut icon" href="Favacon.png" type="image/x-icon">
+        
+        <title>Basic Form Layout</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="data.jason" method="POST">
+            <fieldset>
+                <legend>Basic Form</legend>
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" name="user.name" id="name">
+                    </li>
+                    <li>
+                        <label for="mail">E-Mail:</label>
+                        <input type="email" name="user.mail" id="mail">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea name="user.msg" id="msg"></textarea>
+                    </li>
+                    <li>
+                    <button type="submit">Send Your Message</button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </body>
+</html>

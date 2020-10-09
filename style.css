@@ -1,0 +1,63 @@
+/*Basic Form Style*/
+
+form {
+    /*ceter the form on the page*/
+    margin: 0 auto;
+    width: 400px;
+
+    /*Form Outline*/
+    padding: 1em;
+    border: 2px solid #292929;
+    border-radius: 1em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li {
+    /*if there is 2 li it will change this way*/
+    margin-top: 1em;
+}
+
+label {
+    /*Uniform size and alginment*/
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+input , textarea{
+    /*Will change both textare and input*/
+    font: 1em sans-serif;
+
+    /*Uniform text field sizes*/
+    width: 300px;
+    box-sizing: border-box;
+
+    /*Border matching the field border*/
+    border: 1px solid #292929;
+}
+fieldset {
+    border: 1px solid #292929;
+    border-radius: .5em;
+}
+input:focus, textarea:focus {
+    /*Additional Highlighting for focused items*/
+    border-color: yellowgreen;
+    background-color: #999;
+    outline-style: none;
+    border-radius: .25em;
+}
+textarea {
+    /*align mitilne text field with their labes*/
+    vertical-align: top;
+
+    /*Provide some space to type     5em = 5 lines*/
+    height: 5em;
+}
+button {
+    /* align buttons with the text fields*/
+    margin-left: calc(60px + .25em);
+    text-align: center;
+}
